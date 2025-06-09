@@ -15,8 +15,8 @@ function updateIsMobile() {
 }
 
 onMounted(() => {
-  updateIsMobile()                                  // ustaw na starcie
-  window.addEventListener('resize', updateIsMobile) // od teraz słuchaj zmian
+  updateIsMobile()
+  window.addEventListener('resize', updateIsMobile)
 })
 
 onUnmounted(() => {
