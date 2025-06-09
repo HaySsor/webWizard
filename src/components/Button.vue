@@ -5,8 +5,6 @@
 </template>
 
 <script setup>
-
-
 </script>
 
 <style scoped lang="scss">
@@ -21,5 +19,11 @@
   padding: 3px 4px;
   border: none;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--hover-accent-color);
+  }
 }
 </style>
