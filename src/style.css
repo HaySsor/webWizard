@@ -9,6 +9,7 @@
   --secondary: #5AABE0;
   --accent-color: #39AEE3;
   --bg-color: #E6E7E6;
+  --shadow: 10px 10px 20px rgba(51, 51, 51, 0.4);
 
   --element-max-width: 1344px;
 }

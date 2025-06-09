@@ -19,13 +19,13 @@
           </p>
         </div>
 
-        <span
+        <Button
             v-if="isOverflowing"
             @click="toggleShowFull"
             class="user-about-box-button"
         >
           {{ showFull ? 'Zwiń opis' : 'Rozwiń opis' }}
-        </span>
+        </Button>
       </template>
     </div>
   </div>
@@ -34,6 +34,7 @@
 <script setup>
 import {ref, computed, onMounted, onUnmounted, nextTick, watch, inject} from 'vue';
 import SkeletonLoader from "./SkeletonLoader.vue";
+import Button from "./Button.vue";
 
 const isMobile = inject("isMobile");
 
@@ -120,6 +121,7 @@ watch(() => [props.isLoading, props.data], ([loading]) => {
     border-radius: 0 0 15px 15px;
     padding: 20px;
     position: relative;
+    box-shadow: var(--shadow);
 
     &.is-loading {
       height: 140px;
@@ -138,11 +140,13 @@ watch(() => [props.isLoading, props.data], ([loading]) => {
     p {
       font-size: 1.4rem;
       margin-bottom: 1rem;
-      padding-inline: 10px;
+      padding: 25px 10px 0;
       @media (width > 700px) {
         font-size: 1.6rem;
+        padding: 25px 20px 0;
       }
     }
+
 
     &-button {
       display: inline-block;

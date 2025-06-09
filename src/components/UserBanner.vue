@@ -91,6 +91,8 @@ const handleShowUserNumber = () => {
   position: relative;
   color: white;
   column-gap: 10px;
+  box-shadow: var(--shadow);
+  z-index: 2;
 
   @media (width > 444px){
     grid-template-columns: 120px 1fr;
