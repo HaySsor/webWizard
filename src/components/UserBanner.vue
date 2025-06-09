@@ -263,6 +263,13 @@ const handleShowUserNumber = () => {
       @media (width > 600px){
         font-size: 1.4rem;
       }
+
+      @media (width > 700px) {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
       @media (width > 750px){
         font-size: 1.5rem;
       }
