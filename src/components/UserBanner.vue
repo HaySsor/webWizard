@@ -2,7 +2,7 @@
   <div class="user-banner">
     <div class="user-banner-img">
       <div v-if="isLoading" class="skeleton-avatar"></div>
-      <img v-else :src="imageSrc" :alt="data?.image?.filename"/>
+      <img v-else loading="lazy" :src="imageSrc" :alt="data?.image?.filename"/>
     </div>
     <div class="user-banner-info">
       <div class="user-banner-info-name">
@@ -41,9 +41,6 @@ const props = defineProps({
 })
 
 const isShowUserNumber = ref(false)
-
-console.log(props.data)
-
 
 const imageSrc = computed(() => {
   if(props?.data?.image){
