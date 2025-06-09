@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary: #1F3C72;
+  --secondary: #5AABE0;
+  --accent-color: #39AEE3;
+  --bg-color: #E6E7E6;
+
+  --element-max-width: 1344px;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+#app{
+  background-color: var(--bg-color);
+  min-height: 100svh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

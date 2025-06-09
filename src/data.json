@@ -1,0 +1,17 @@
+{
+  "status": 200,
+  "message": "Pomyślnie pobrano dane użytkownika",
+  "data": {
+    "id": "2",
+    "name": "Anna",
+    "surname": "Asynchroniczna",
+    "email": "anna@example.com",
+    "phone": "444555666",
+    "about": "Vue.js to moje środowisko naturalne – szczególnie w połączeniu z Vue Routerem i Vuexem. W Nuxt rozwijam aplikacje SSR, których czas ładowania nie przekracza 2 sekund nawet na 3G.\n\nStyluję z chirurgiczną precyzją: SCSS to mój drugi język, a utility-first to mój styl życia. Integruję Tailwind i piszę własne mixiny, które przyspieszają development interfejsów.\n\nZoptymalizowałam setki komponentów pod kątem SEO i dostępności. Każda strona, którą tworzę, spełnia wymagania Google Lighthouse, a także realnych użytkowników korzystających z czytników ekranu.",
+    "image": {
+      "baseUrl": "https://webwizards.home.pl/jacek/frontend-task/api/user/",
+      "filename": "ludek",
+      "extension": "webp"
+    }
+  }
+}
